@@ -27,7 +27,7 @@
 
 <body class="antialiased" >
 
-<main class="relative flex items-top justify-center min-h-screen bg-gray-500 dark:bg-gray-900 sm:items-center sm:pt-0" >
+<main class="relative flex items-top justify-center min-h-screen bg-gray-800 dark:bg-gray-900 sm:items-center sm:pt-0" >
 
     @if (Route::has('login'))
         @include('partials.login');
@@ -41,7 +41,7 @@
             @yield('content')
         </div >
 
-        @include('partials.footer');
+        @include('partials.footer')
 
     </div >
 

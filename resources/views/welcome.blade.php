@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="flex justify-center pt-8 sm:justify-start sm:pt-0" >
-        <img src="assets/images/restaurant_01_resized.jpg" alt="Our restaurant" />
+        <img src="assets/images/restaurant_01_resized.jpg" alt="Our restaurant" class="rounded-lg" />
     </div >
 
     <!-- Start Menus -->

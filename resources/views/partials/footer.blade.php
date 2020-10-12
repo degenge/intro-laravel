@@ -1,6 +1,6 @@
-<div class="flex justify-center bg-black text-white mt-4 sm:items-center sm:justify-between" >
+<div class="flex justify-center bg-gray-900 text-red-600 rounded-lg p-4 mt-6 sm:items-center sm:justify-between" >
 
-    <div class="text-center text-sm text-gray-500 sm:text-left" >
+    <div class="text-center text-sm sm:text-left" >
         <div class="flex items-center" >
             <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
                  stroke="currentColor" class="-mt-px w-5 h-5 text-gray-400" >
@@ -24,7 +24,7 @@
         </div >
     </div >
 
-    <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0" >
+    <div class="ml-4 text-center text-sm sm:text-right sm:ml-0" >
         Build v{{ Illuminate\Foundation\Application::VERSION }}
     </div >
 
