@@ -1,4 +1,4 @@
-<div class="flex items-center justify-between flex-wrap p-4" >
+<div class="flex items-center justify-between flex-wrap pt-4" >
 
     <div class="flex items-center flex-shrink-0 text-white mr-6" >
 
@@ -18,7 +18,7 @@
             <a class="text-center block rounded py-2 px-4 hover:bg-red-800 hover:text-white {{ (strpos(Route::currentRouteName(), 'home') === 0) ? 'bg-red-800 text-white' : 'text-red-600' }}"
                href="{{ route('home') }}" >Home</a >
         </li >
-        <li class="flex-1 mr-2" >
+        <li class="flex-1" >
             <a class="text-center block rounded py-2 px-4 hover:bg-red-800 hover:text-white {{ (strpos(Route::currentRouteName(), 'reviews.show') === 0) ? 'bg-red-800 text-white' : 'text-red-600' }}"
                href="{{ route('reviews.show') }}" >Reviews</a >
         </li >

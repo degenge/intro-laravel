@@ -25,21 +25,19 @@
     </style >
 </head >
 
-<body class="antialiased" >
+<body class="antialiased bg-gray-800 dark:bg-gray-900" >
 
-<main class="relative flex items-top justify-center min-h-screen bg-gray-800 dark:bg-gray-900 sm:items-center sm:pt-0" >
+<main class="max-w-6xl mx-auto sm:px-6 lg:px-8 min-h-screen " >
 
     @if (Route::has('login'))
         @include('partials.login');
     @endif
 
-    <div class="max-w-8xl mx-auto sm:px-6 lg:px-8" >
+    <div class="" >
 
         @include('partials.nav')
 
-        <div class="container" >
-            @yield('content')
-        </div >
+        @yield('content')
 
         @include('partials.footer')
 

@@ -1,9 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-
-    <div class="flex justify-center pt-8 sm:justify-start sm:pt-0" >
-        <img src="assets/images/restaurant_01_resized.jpg" alt="Our restaurant" class="rounded-lg" />
+    <div class="flex justify-center bg-gray-900 text-red-600 rounded-lg p-4 mt-4 sm:items-center sm:justify-between" >
+        <div class="flex justify-center sm:justify-start sm:pt-0" >
+            <img src="assets/images/restaurant_01_resized.jpg" alt="Our restaurant" class="rounded-lg" />
+        </div >
     </div >
 
     <!-- Start Menus -->
