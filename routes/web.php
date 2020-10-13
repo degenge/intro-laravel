@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ReviewController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+Route::get('/', HomeController::class)->name('home');
 
-Route::get('/reviews', function () {
-    return view('reviews');
-})->name('reviews.show');
+Route::get('/reviews', [ReviewController::class, 'show'])->name('reviews.show');
+//Route::get('/reviews', 'ReviewController@show')->name('reviews.show');
