@@ -9,20 +9,48 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" >
 
-    <!-- Tailwindcss -->
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" >
+    <!-- Style -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet" >
 
-    <!-- Styles -->
-    <style >
+    <!-- Style -->
+    <script src="{{ asset('js/app.js') }}" ></script >
 
 
-    </style >
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" >
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js" ></script >
 
     <style >
         body {
             font-family: 'Nunito';
         }
+
+        [x-cloak] {
+            display: none;
+        }
+
+        .progress {
+            animation: progress;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+        }
+
+        @keyframes progress {
+            0% {
+                width: 0%;
+            }
+            80% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.5;
+                width: 100%;
+            }
+        }
+
     </style >
+
 </head >
 
 <body class="antialiased bg-gray-800 dark:bg-gray-900" >

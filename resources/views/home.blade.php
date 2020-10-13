@@ -7,6 +7,9 @@
         </div >
     </div >
 
+    @include('partials.slider')
+    @include('partials.slider2')
+
     <!-- Start Menus -->
     <section class="px-10 grid grid-cols-3 gap-4" >
 
