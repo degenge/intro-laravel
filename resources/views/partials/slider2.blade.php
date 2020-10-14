@@ -36,8 +36,10 @@
                                 class="text-xl font-extrabold italic mb-2 text-red-800 leading-tight"
                                 x-html="slide.comment" >
                             </p >
-                            <footer class="text-white">— <cite x-html="slide.name_first + ' ' + slide.name_last" ></cite ></footer >
-                            <div class="stars" x-html="slide.rate"  ></div >
+                            <footer class="text-white" >
+                                — <cite x-html="slide.name_first + ' ' + slide.name_last" ></cite >
+                            </footer >
+                            <div class="stars"  x-bind:style="'--rating: ' + slide.rate + ';'" ></div >
                         </blockquote >
                     </div >
                 </div >
