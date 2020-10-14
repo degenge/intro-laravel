@@ -13,4 +13,6 @@
 
 {{--    @endforeach--}}
 
+    @include('partials.form')
+
 @endsection

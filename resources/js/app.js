@@ -5,7 +5,6 @@ import 'swiper/swiper-bundle.css';
 require('./bootstrap');
 import 'alpinejs'
 
-
 // Alpine 2.3.5
 window.testimonialSlideshow = function (slides) {
     return {
