@@ -1,11 +1,11 @@
-<div class="bg-gray-900 flex items-center justify-center rounded-lg" >
+<div class="flex justify-center bg-gray-900 text-red-600 rounded-lg p-4 mt-4 sm:items-center sm:justify-between" >
 
     <section class="flex flex-col items-center justify-center w-full rounded-lg"
              :aria-labelledby="title.toLowerCase().replace(' ', '-')"
              @keydown.arrow-right="state.usedKeyboard = true;updateCurrent(nextSlide)"
              @keydown.arrow-left="state.usedKeyboard = true;updateCurrent(previousSlide)"
              @keydown.window.tab="state.usedKeyboard = true"
-             x-data="testimonialSlideshow(slides)"
+             x-data="testimonialSlideshow({{$reviews}})"
              x-title="Quotes Slideshow"
              x-init="setup()" >
 
@@ -34,9 +34,10 @@
                         <blockquote >
                             <p
                                 class="text-xl font-extrabold italic mb-2 text-red-800 leading-tight"
-                                x-html="slide.content" >
+                                x-html="slide.comment" >
                             </p >
-                            <footer class="text-white">— <cite x-html="slide.author" ></cite ></footer >
+                            <footer class="text-white">— <cite x-html="slide.name_first + ' ' + slide.name_last" ></cite ></footer >
+                            <div class="stars" x-html="slide.rate"  ></div >
                         </blockquote >
                     </div >
                 </div >

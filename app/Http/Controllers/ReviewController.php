@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Review;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
@@ -18,7 +19,7 @@ class ReviewController extends Controller
      */
     public function show(Request $request)
     {
-        return view('reviews');
+        return view('reviews', ['reviews' => Review::all()]);
     }
 
 }
