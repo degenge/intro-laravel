@@ -65,6 +65,10 @@
 
         @include('partials.nav')
 
+        <div class="alert alert-success" >
+            @yield('system')
+        </div >
+        
         @yield('content')
 
         @include('partials.footer')

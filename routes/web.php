@@ -18,4 +18,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', HomeController::class)->name('home');
 
 Route::get('/reviews', [ReviewController::class, 'show'])->name('reviews.show');
+Route::post('/reviews/store', [ ReviewController::class, 'store' ])->name('reviews.store');
 //Route::get('/reviews', 'ReviewController@show')->name('reviews.show');
