@@ -12,7 +12,7 @@ class Review extends Model
     /**
      * @var array|string[]
      */
-    protected array $fillable = [
+    protected $fillable = [
         'name_first',
         'name_last',
         'rate',
